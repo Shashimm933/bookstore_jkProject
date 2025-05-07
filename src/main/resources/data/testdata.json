@@ -1,0 +1,22 @@
+
+{
+  "user": {
+    "id": 77,
+    "email": "shashi@gmail.com",
+    "password": "Test@123"
+  },
+  "book": {
+    "id": 77,
+    "name": "shashi",
+    "author": "testing",
+    "published_year": 2025,
+    "book_summary": "loading"
+  },
+  "invalidBook": {
+    "id": "",
+    "name": "",
+    "author": "",
+    "published_year": "not_a_year",
+    "book_summary": 12345
+  }
+}

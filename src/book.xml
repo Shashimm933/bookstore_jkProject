@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API Test Suite" parallel="false">
+    <listeners>
+        <listener class-name="org.utils.APITestListener"/>
+        <listener class-name="org.utils.ExtentReportListener"/>
+    </listeners>
+    <test name="API Tests">
+        <classes>
+            <class name="org.SignUpTest"/>
+            <class name="org.AddBookTest"/>
+            <class name="org.UpdateBookTest"/>
+            <class name="org.GetBookByIdTest"/>
+            <class name="org.GetAllBooksTest"/>
+            <class name="org.DeleteBookTest"/>
+        </classes>
+    </test>
+</suite>
