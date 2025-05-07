@@ -20,7 +20,7 @@ public class ExtentReportListener implements IReporter {
 
     public void initializeReporter() {
         // Initialize the ExtentReports instance
-        String reportPath = System.getProperty("user.dir") + "/test-output/ExtentReport.html";
+        String reportPath = System.getProperty("user.dir") + "/target/ExtentReport.html";
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
         extent = new ExtentReports();
         extent.attachReporter(sparkReporter);
