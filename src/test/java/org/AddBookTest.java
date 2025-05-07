@@ -1,4 +1,5 @@
 package org;
+import com.aventstack.extentreports.ExtentTest;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -26,6 +27,7 @@ public class AddBookTest extends BaseTest {
     }
         @Test(retryAnalyzer = RetryAnalyzer.class)
         public void testCreateBookSuccess() {
+            test = extent.createTest("Validate Book Creation");
             Response response = given(getRequestWithToken())
                     .log().all()
                     .header("Content-Type", "application/json")
